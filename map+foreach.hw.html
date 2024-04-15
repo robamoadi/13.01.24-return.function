@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>map and foreach</title>
+</head>
+<body>
+    <!--<button onclick="window.print()">Print this page</button>
+    prints the content on the window-->
+    <script>
+        //map exersicee
+        const temp = [0 , 30 ,100]
+        const farhat = temp.map( t => (t*9/5)+32)
+        document.write (`Exercise 1: <br>`)
+        document.write (`Tempature in farhat :[${farhat}]<br> <br>`)
+
+        const names = ["Harry" ,"Elena","Adam"]
+        const add_word = names.map (word => (`Hellow ${word}`))
+        document.write (`Exercise 2: <br>`)
+        document.write (`New Array :[${add_word}] <br> <br>`)
+
+        const positive_number = [4, -10 , 82 , -64]
+        const negative_numbers = positive_number.map (n => (n*-1))
+        document.write (`Exercise 3: <br>`)
+        document.write (`Numbers :[${negative_numbers}] <br> <br>`)
+
+        //ForEach exersice
+         const num = [ 10, 20 ,30 , 40]
+         let sum = 0
+         const adding = num.forEach(n => { sum += n });
+         document.write (`Exercise 1: <br>`)
+        document.write (`[${num}] <br> Sum of the numbers :${sum}<br> <br>`)
+
+        const sentence = ["Foreach" , "loops" , "exercise"]
+        document.write (`Exercise 2: <br>`)
+        const all_togather = sentence.forEach(word => document.write (`${word}&nbsp`));
+        document.write("<br> <br>")
+        //document.write (`Numbers :[${all_togather}] <br> <br>`)
+        
+
+        const number = [2 , 4 , 6 , 8 ,10]
+        let alleven = true
+        const all = number.forEach(n => {n % 2 == 0 })
+        document.write (`Exercise 3: <br>`)
+        document.write(`${all}`)
+            
+       
+    </script>
+    
+</body>
+</html>
